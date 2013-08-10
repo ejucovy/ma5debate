@@ -33,8 +33,9 @@ Gray background: #e8e8e8
 .candidate-blurbs .title { font-size: 13px; }
 .candidate-blurbs a.more { font-size: 13px; color: #006ea9; text-decoration: none; border-bottom: none 0px white; font-weight: 400; margin-top: 9px; line-height: 22px; }
 .candidate-blurbs a.more:hover { font-size: 13px; color: #bb0008; text-decoration: none; border-bottom-style: none; border-bottom-width: 0px; }
-.candidate-entry img { width: 64px; float: left; margin-right: 12px;}
-.candidate-entry { margin: 16px 12px 14px 0; }
+.candidate-entry img { width: 64px; float: left; margin-right: 37px; margin-left: 37px;}
+.candidate-entry a.cf { margin-right: 37px; margin-left: 37px; }
+/*.candidate-entry { margin: 16px 12px 14px 0; } */
 .horizontal-candidates .candidate-entry { margin: 16px 20px 14px 20px; float: left; }
 .candidate-entry .after {float: left; }
 .candidate-blurbs { line-height: 1em; float: right; /* background-color: white; padding: 15px 15px 15px 30px;*/
@@ -61,7 +62,8 @@ a.take-action.blue:hover { background-color: rgba(76, 167, 228, .8); }
 a.take-action.red:hover { background-color: rgba(234, 24, 34, .9); }
 
 
-.waiting a.take-action { font-size: 24px; margin-top: 60px; padding: 15px 40px 15px 40px;}
+.waiting a.take-action, .testimonials a.take-action.big { font-size: 24px; margin-top: 60px; padding: 15px 40px 15px 40px;}
+.testimonials a.take-action.big { margin-top: 20px; margin-bottom: 90px;}
 
 .testimonials .take-action.gray { color: black; background-color: #e3e3e3; font-weight: 300; font-size: 14px; padding-top: 7px; padding-bottom: 7px; }
 .testimonials { border-bottom: 1px solid black;}
@@ -242,16 +244,23 @@ div.breaker.waiting.testimonials, div.breaker.waiting.testimonials h3 {
     -webkit-transform: rotate(-90deg); 
     -moz-transform: rotate(-90deg);
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    position: relative;
+    float: left;
+    top: 72px;
+    right: 24px;
+    text-transform: uppercase;
 }
 .bluebg .candidate-entry {
     float: left;
-margin-left: 36px; margin-right: 36px;
-text-align: center;
+    margin-left: 8px; margin-right: 8px;
+    text-align: center;
+    margin-bottom: 15px;
 }
-.bluebg .candidate-entry img { border-radius: 50%; margin: 0 auto; clear: both;}
-.bluebg .candidate-entry .name { font-size: 16px; }
-.bluebg .candidate-entry .more { font-size: 14px; color: white; border-bottom-style: none; }
-
+.bluebg .candidate-entry img { border-radius: 50%; clear: both; margin-top: 0px; margin-left: 37px;}
+.bluebg .candidate-entry .name { font-size: 14px; margin-top: -10px; margin-bottom: -3px; }
+.bluebg .candidate-entry .more { font-size: 12px; color: yellow; border-bottom-style: none; }
+.bluebg .candidate-entry:first-child { margin-left: -24px; } 
+.testimonials { text-align: center; }
 
 </style>
 
@@ -309,35 +318,35 @@ text-align: center;
 			<h4>Candidates</h4>
 			
 			<div class="candidate-entry cf">
-			  <a href="/ma5/candidates/#will-brownsberger"><img src="https://s3.amazonaws.com/s3.boldprogressives.org/images/brownsberger-debate.jpg" /></a>
+			  <a class="cf" href="/ma5/candidates/#will-brownsberger"><img src="https://s3.amazonaws.com/s3.boldprogressives.org/images/brownsberger-debate.jpg" /></a>
 				<p class="name">Will Brownsberger</p>
 				<!--p class="title">State Senator</p-->
 				<a class="more" href="/ma5/candidates/#will-brownsberger">Learn More</a>
 			</div>
 
 			<div class="candidate-entry cf">
-			  <a href="/ma5/candidates/#katherine-clark"><img src="https://s3.amazonaws.com/s3.boldprogressives.org/images/clark-debate.jpg" /></a>
+			  <a class="cf" href="/ma5/candidates/#katherine-clark"><img src="https://s3.amazonaws.com/s3.boldprogressives.org/images/clark-debate.jpg" /></a>
 				<p class="name">Katherine Clark</p>
 				<!--p class="title">State Senator</p-->
 				<a class="more" href="/ma5/candidates/#katherine-clark">Learn More</a>
 			</div>
 
 			<div class="candidate-entry cf">
-			  <a href="/ma5/candidates/#peter-koutoujian"><img src="https://s3.amazonaws.com/s3.boldprogressives.org/images/koutoujian-debate.jpg" /></a>
+			  <a class="cf" href="/ma5/candidates/#peter-koutoujian"><img src="https://s3.amazonaws.com/s3.boldprogressives.org/images/koutoujian-debate.jpg" /></a>
 				<p class="name">Peter Koutoujian</p>
 				<!--p class="title">County Sheriff</p-->
 				<a class="more" href="/ma5/candidates/#peter-koutoujian">Learn More</a>
 			</div>
 
 			<div class="candidate-entry cf">
-			  <a href="/ma5/candidates/#carl-sciortino"><img src="https://s3.amazonaws.com/s3.boldprogressives.org/images/sciortino-debate.jpg" /></a>
+			  <a class="cf" href="/ma5/candidates/#carl-sciortino"><img src="https://s3.amazonaws.com/s3.boldprogressives.org/images/sciortino-debate.jpg" /></a>
 				<p class="name">Carl Sciortino</p>
 				<!--p class="title">State Representative</p-->
 				<a class="more" href="/ma5/candidates/#carl-sciortino">Learn More</a>
 			</div>
 
 			<div class="candidate-entry cf">
-			  <a href="/ma5/candidates/#karen-spilka"><img src="https://s3.amazonaws.com/s3.boldprogressives.org/images/spilka-debate.jpg" /></a>
+			  <a class="cf" href="/ma5/candidates/#karen-spilka"><img src="https://s3.amazonaws.com/s3.boldprogressives.org/images/spilka-debate.jpg" /></a>
 					<p class="name">Karen Spilka</p>
 					<!--p class="title">State Senator</p-->
 					<a class="more" href="/ma5/candidates/#karen-spilka">Learn More</a>
@@ -370,7 +379,8 @@ text-align: center;
 											
 </div></div>
 
-<div class="breaker content testimonials waiting cf">
+<!--div class="breaker content testimonials waiting cf"-->
+<div class="breaker content testimonials cf">
 <div class="width-align">
     <h1 class="thin">How the Open Debate Series works:</h1>
 
@@ -395,7 +405,7 @@ text-align: center;
    	<!--a class="take-action gray" href="/">watch</a-->
    </div>
    <div id="start"> 
-    	<a href="/ma5/about/" class="take-action blue">Stay in the loop about our open debate series</a>
+    	<a href="/ma5/about/" class="take-action blue big">Stay in the loop about our open debate series</a>
     </div>
         </div>
 </div>
