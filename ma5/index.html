@@ -566,7 +566,7 @@ $(function() {
         },
         dataType: 'json',
         success: function(data) {
-            $('#followers').html(data.followers_count);
+            $('#followers').html(m(data.followers_count, 1));
         }
     });
 });
