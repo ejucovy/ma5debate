@@ -557,17 +557,17 @@ $(function() {
         return n;
     }
 
+$(function() {
     $.ajax({
-        url: 'http://api.twitter.com/1/users/show.json',
+        url: 'https://twitter.com/users/BoldProgressive.json?callback=?',
         data: {
-            screen_name: 'BoldProgressive'
         },
-        dataType: 'jsonp',
+        dataType: 'json',
         success: function(data) {
-           count = data.followers_count;
-           $('#followers').html(m(count, 1));
+            $('#followers').html(data.followers_count);
         }
     });
+});
 });
     });
   </script>
